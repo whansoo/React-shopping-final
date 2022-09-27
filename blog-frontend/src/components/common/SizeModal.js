@@ -15,8 +15,6 @@ const Fullscreen = styled.div`
 `;
 
 const AskModalBlock = styled.div`
-  /* width: 320px; */
-  /* height:680px */
   background: white;
   padding: 1.5rem;
   border-radius:4px;
@@ -52,7 +50,7 @@ const SizeModal = ({
     return (
         <Fullscreen>
             <AskModalBlock>
-                <img src={description} alt="사이즈가이드" style={{height:'800px'}}/>
+                <img src={description} alt="사이즈가이드" style={{height:'700px'}}/>
                 <div className='buttons' >
                     <StyledButton onClick={onCancel}>{cancelText}</StyledButton>
                 </div>

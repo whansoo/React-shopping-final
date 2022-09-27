@@ -17,7 +17,7 @@ import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import GitHubIcon from '@mui/icons-material/GitHub';
-// import { mobile } from "../../responsive";
+
 
 const Container = styled.div`
 `;
@@ -26,7 +26,9 @@ const Wrapper = styled.div`
   padding: 50px;
   display: flex;
   background-color: #FFFAFA;
- 
+  flex: 1;
+  align-items: center;
+  justify-content: center;
 `;
 
 const ImgContainer = styled.div`
@@ -112,15 +114,9 @@ const FilterColor = styled.div`
   height: 20px;
   border-radius: 50%;
   background-color: ${(props) => props.color};
-  /* margin: 0px 5px; */
   cursor: pointer;
 `;
 
-// const FilterSize = styled.select`
-//   margin-left: 10px;
-//   padding: 5px;
-  
-// `;
 
 const StyledRadio = styled.label`
 & {
@@ -149,7 +145,7 @@ const StyledRadio = styled.label`
     }
   }
 `;
-// const FilterSizeOption = styled.option``;
+
 
 const AddContainer = styled.div`
   width: 50%;
@@ -192,7 +188,7 @@ const Button = styled.button`
 `;
 
 const ButtonModal = styled.button`
-    margin-right: 50px;
+     margin-right: 50px;
      border: none;
      cursor: pointer;
      color: black;
@@ -356,12 +352,6 @@ if (!products) return null;
               <input type="radio" name="item" value="260" onClick={onClick}/>
 	            <span>260</span>
               </StyledRadio>
-              {/* <FilterSize >
-              {products.size?.map((s) => (
-                  <FilterSizeOption key={s}>{s}</FilterSizeOption>
-                ))}
-              </FilterSize> */}
-        
             </Filter>
           </FilterContainer>
           <AddContainer>
@@ -393,7 +383,7 @@ if (!products) return null;
         onCancel={onCancel}
       />
       </Wrapper>
-      <img src="/image/배송안내.jpg" alt='이미지' style={{marginLeft:'400px'}}/>
+      <img src="/image/배송안내.jpg" alt='이미지' style={{margin:'0 auto',display:'flex', alignItems:'center', justifyContent:'center' }}/>
       <Footer />
     </Container>
   );

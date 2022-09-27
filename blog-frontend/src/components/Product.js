@@ -1,6 +1,4 @@
-import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
-import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import { Link } from 'react-router-dom';
 import { mobile } from "../responsive";
 import styled from "styled-components";
@@ -20,14 +18,14 @@ import styled from "styled-components";
     transition: all 0.5s ease;
     cursor: pointer;
   `;
-  
+ 
+
   const Container = styled.div`
-  
     flex: 1;
-    margin: 5px;
+    margin: 10px;
     min-width: 280px;
     height: 350px;
-    display: inline-block;
+    display: flex;
     align-items: center;
     justify-content: center;
     background-color: #f5fbfd;
@@ -40,9 +38,13 @@ import styled from "styled-components";
  
   
   const Image = styled.img`
-    height: 80%;
-    z-index: 2;
-    ${mobile({width: '100%' })}
+
+ position: relative;
+  width: 100%;
+  height: 75%;
+  z-index: 2;
+
+    /* ${mobile({width: '100%' })} */
     
   `;
   
@@ -65,24 +67,22 @@ import styled from "styled-components";
   
   const Product = ({ post }) => {
 
-    const { _id} = post; 
+    const { _id} = post;
     return (
+    
       <Container>
         <Image src={post.selectedFile} alt='사진' />
-         <p style={{textAlign:'center'}}>{post.title}</p>
-        <p style={{textAlign:'center'}}>{post.price}원</p> 
+       
+       
         <Info>
-          <Icon>
-            <ShoppingCartOutlinedIcon />
-          </Icon>
           <Icon>
           <Link to={`/@productdetail/${_id}`}><SearchOutlinedIcon/></Link>
           </Icon>
-          <Icon>
-            <FavoriteBorderOutlinedIcon />
-          </Icon>
         </Info>
+        <p style={{position:'absolute', bottom: '-15px',textAlign:'center' }}>{post.title}</p>
+       <p style={{position:'absolute', bottom: '-40px',textAlign:'center'}}>{post.price}원</p> 
       </Container>
+       
     );
   };
   
