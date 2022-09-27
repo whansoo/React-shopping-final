@@ -60,5 +60,5 @@ http://whanshop.herokuapp.com/
 #### **1. 메인화면**   
 
 
-#### ![메인페이지]()
+#### ![메인페이지](https://user-images.githubusercontent.com/98297436/192531793-3abac667-5d94-43dc-8671-3d33f92b84e2.gif)
 
