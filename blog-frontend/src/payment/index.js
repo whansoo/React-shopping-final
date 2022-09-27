@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import styled from "styled-components";
-import { useNavigate } from "../../node_modules/react-router-dom/index";
+import { useNavigate } from "../../node_modules/react-router-dom/dist/index";
 
 const Button = styled.button`
     font-size: 15px;
