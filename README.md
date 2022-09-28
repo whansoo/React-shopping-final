@@ -127,4 +127,4 @@ http://whanshop.herokuapp.com/
 #### **- 새로고침시 로그인 유지가 되지 않음**
 #### **- react-router 등 최신라이브러리 버전업으로 인해 문법에 맞지 않아 에러 발생**
 #### **- material ui, ant등 설치시 에러 발생**
-#### **- 서버쪽에서 reqire을 import로 바꿀때 설정 잘못으로 에러 발생**
+#### **- 서버쪽에서 require을 import로 바꿀때 설정 잘못으로 에러 발생**
