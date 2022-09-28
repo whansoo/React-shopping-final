@@ -11,6 +11,7 @@ http://whanshop.herokuapp.com/
 * 상세페이지 상품 선택 후 장바구니에 추가, 삭제 기능
 * 아임포트 api를 사용한 결제 기능 
 * 결제 후 결제내역 페이지 기능
+* 반응형 웹 기능 구현
 
 ## 🔨기술 스택
 <div align="center">
@@ -89,20 +90,41 @@ http://whanshop.herokuapp.com/
 
 #### **4. 상품업로드**   
 
+- 관리자만 상품 업로드를 할 수 있게 구현
+- base64를 사용하여 이미지를 업로드한다.
+- 업로드를 한 상품은 메인페이지 상품목록에서 보여진다. 
 
 #### ![상품업로드](https://user-images.githubusercontent.com/98297436/192681828-c80ff7c9-1601-4a97-8815-2de8febc9dd3.gif)
 
 #### **5. 검색기능**  
 
+- 내가 검색창에 입력한 값을 저장 한다음 이것을 includes한 상품을 filter로 걸러낸다 이때 이것을 map을써서 반복문을 돌린다. 
 
 #### ![검색기능](https://user-images.githubusercontent.com/98297436/192681747-6be87183-681b-42f0-b385-f3f869932bd0.gif)
 
 #### **6. 상세페이지 장바구나 추가/삭제**  
 
+- modal창을 만들어 사이즈를 볼 수 있게 구현
+- 사이즈와 수량을 정한다음에 장바구니 담으면 카트에 담겨진다.
+- 로그인이 되어있지 않으면 로그인 부터 하라고 메시지가 나온다
+- 장바구니에서는 삭제를 할 수 있다.
 
 #### ![상세카트](https://user-images.githubusercontent.com/98297436/192681894-1cbed180-e381-4d53-9afc-d10f3c3f897a.gif)
 
 #### **7. 결제 및 결제내역**  
 
+- 아임포트 api이용하여 결제 기능 구현
+- 결제 한 후에 결제한 ID와 결제 날짜 가격등 결제내역에 보여준다
 
 #### ![결제](https://user-images.githubusercontent.com/98297436/192681937-87ab351b-8cf8-421b-a39a-90a0db7976e3.gif)
+
+## 📚ERROR 해결 
+#### - CORS에러
+#### **- useEffect() 무한 로딩 에러**
+#### **- map() is undefined**
+#### **- propertiy is null**
+#### **- propertiy not reading**
+#### **- 새로고침시 로그인 유지가 되지 않음**
+#### **- react-router 등 최신라이브러리 버전업으로 인해 문법에 맞지 않아 에러 발생**
+#### **- material ui, ant등 설치시 에러 발생**
+#### **- 서버쪽에서 reqire을 import로 바꿀때 설정 잘못으로 에러 발생**
