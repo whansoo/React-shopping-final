@@ -69,8 +69,9 @@ http://whanshop.herokuapp.com/
 
 #### **2. 로그인/회원가입**   
 
-- 
-- 
-- 
-- 
+- JWT를 통한 회원인증 시스템 구현
+- 회원인증 에러 처리
+- 로그인 상태 유지
+- 로그아웃 기능 구현
+#### ![로그인](https://user-images.githubusercontent.com/98297436/192680108-74166645-799d-45a8-ac32-88e7e7025a11.gif)
 
