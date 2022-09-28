@@ -118,6 +118,10 @@ http://whanshop.herokuapp.com/
 
 #### ![결제](https://user-images.githubusercontent.com/98297436/192681937-87ab351b-8cf8-421b-a39a-90a0db7976e3.gif)
 
+#### **8. 반응형 웹**  
+#### ![반응형2](https://user-images.githubusercontent.com/98297436/192704264-fcebfe0a-ec2e-43b1-a897-b7e1667ac5fa.gif)
+
+
 ## 📚ERROR 해결 
 #### - CORS에러
 #### **- useEffect() 무한 로딩 에러**
