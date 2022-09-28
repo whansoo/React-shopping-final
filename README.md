@@ -73,5 +73,22 @@ http://whanshop.herokuapp.com/
 - 회원인증 에러 처리
 - 로그인 상태 유지
 - 로그아웃 기능 구현
+
 #### ![로그인](https://user-images.githubusercontent.com/98297436/192680108-74166645-799d-45a8-ac32-88e7e7025a11.gif)
+
+#### **3. 게시판**   
+
+- 로그인 했을 때만 글을 쓸 수 있게 구현
+- 글 작성 시 사용자 정보 넣기
+- 글 수정 및 삭제시 권한 확인하기
+- 사용자 이름이나 태그로 필터링 하기
+- 페이지네이션 구현
+- quill 에디터 사용
+
+#### ![게시판](https://user-images.githubusercontent.com/98297436/192680926-22a2bddd-d3b5-4b0b-a63a-6f7b77d4724c.gif)
+
+#### **4. 검색기능**   
+
+
+
 
