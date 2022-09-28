@@ -3,7 +3,6 @@ import { mobile } from "../responsive";
 
 const Container = styled.div`
   width: 100%;
-  /* padding-top: 100px; */
   background-color: rgb(245,245,246);
   flex: 1;
   margin: 3px;

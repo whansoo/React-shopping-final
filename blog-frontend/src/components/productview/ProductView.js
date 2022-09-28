@@ -48,7 +48,6 @@ const Image = styled.img`
 const InfoContainer = styled.div` 
  width: 588px;
  display:block;
-  /* flex: 1; */
   padding: 0px 50px;
   margin-right: 200px;
 `;
@@ -80,7 +79,6 @@ const Desc = styled.p`
 const Price = styled.span`
     font-weight: 100;
     font-size: 40px;
-    /* margin: 30px 0 0; */
     line-height: 30px;
     margin-right: .5em;
     color: aqua;
@@ -206,7 +204,6 @@ const SocialContainer = styled.div`
 const SocialIcon = styled.div`
   width: 40px;
   height: 40px;
-  /* border-radius: 50%; */
   color: white;
   background-color: #${(props) => props.color};
   display: flex;
@@ -300,12 +297,6 @@ console.log("products" + JSON.stringify(products));
 if (!products) return null;
 
 
-//로딩 중이거나 아직 포스트 데이터가 없을 때
-// if (loading || !productview) {
-  //   return null;
-  // }
-  
-  // const { title, body, selectedFile, price, size, color  } = productview;
  
   
   return (

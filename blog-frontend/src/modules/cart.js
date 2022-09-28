@@ -70,9 +70,6 @@ const addcart = handleActions(
       quantity: products.quantity,
       total: products.price * products.quantity,
       products,
-      // userId: products.userId,
-      // products: [...state.products, products.products],
-      // total: (products.total += products.quantity),
     
     }),
     // 카트 담기 실패

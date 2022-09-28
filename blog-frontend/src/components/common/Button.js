@@ -5,7 +5,6 @@ import palette from "../../lib/styles/palette";
 
 const buttonStyle = css`
   border: none;
-  /* border-radius: 14px; */
   font-size: 1rem;
   font-weight: bold;
   padding: 0.25rem 1rem;

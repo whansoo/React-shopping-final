@@ -17,14 +17,7 @@ const [REGISTER, REGISTER_SUCCESS, REGISTER_FAILURE] =  createRequestActionTypes
 const [LOGIN, LOGIN_SUCCESS, LOGIN_FAILURE] = createRequestActionTypes(
   'auth/LOGIN',
 );
-//createRequestActionTypes사용 하기 전
-// const REGISTER = 'auth/REGISTER';
-// const REGISTER_SUCCESS = 'auth/REGISTER_SUCCESS';
-// const REGISTER_FAILURE = 'auth/REGISTER_FAILURE';
 
-// const LOGIN = 'auth/LOGIN';
-// const LOGIN_SUCCESS = 'auth/LOGIN_SUCCESS';
-// const LOGIN_FAILURE = 'auth/LOGIN_FAILURE';
 export const changeField = createAction(
   CHANGE_FIELD,
   ({ form, key, value }) => ({
@@ -68,17 +61,14 @@ const initialState = {
   authError: null,
 };
 
-  // [CHANGE_INPUT]: (state, action) => ({ …state, input: action.payload }),
-  // [CHANGE_INPUT]: (state, { payload: input }) => ({ ...state, input }),
-
-    //form: action.payload, key: action.payload, value: action.payload
+  
 const auth = handleActions(
   {                           
     [CHANGE_FIELD]: (state, { payload: { form, key, value } }) =>
       produce(state, draft => {
         draft[form][key] = value; // 예: state.register.username을 바꾼다.
       }),
-      //(state, action) => ({...state, form: action.payload})
+      
     [INITIALIZE_FORM]: (state, { payload: form }) => ({
       ...state,
       [form]: initialState[form],

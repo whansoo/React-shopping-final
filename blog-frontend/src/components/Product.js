@@ -1,6 +1,5 @@
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import { Link } from 'react-router-dom';
-import { mobile } from "../responsive";
 import styled from "styled-components";
   
   const Info = styled.div`
@@ -43,8 +42,6 @@ import styled from "styled-components";
   width: 100%;
   height: 75%;
   z-index: 2;
-
-    /* ${mobile({width: '100%' })} */
     
   `;
   

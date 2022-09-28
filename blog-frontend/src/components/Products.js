@@ -21,18 +21,6 @@ const Products = ({ products, loading, showWriteButton, query }) => {
         ))}
         </Container>
       )}
-     
-       {/* {!loading && products && (
-         <div>
-          {products.map(post => (
-            <Product post={post} key={post._id}/>
-        ))}
-            </div>
-      )}
-      */}
-  
-    
-    
     </>
   );
 };

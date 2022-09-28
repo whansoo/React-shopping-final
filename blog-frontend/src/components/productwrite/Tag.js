@@ -3,7 +3,6 @@ import styled from "styled-components";
 import palette from "../../lib/styles/palette";
 
 const TagBoxBlock = styled.div`
-/* width: 100%; */
 border-top: 1px solid ${palette.gray[2]};
 padding-top: 2rem;
 width: 80%;

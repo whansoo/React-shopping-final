@@ -146,11 +146,7 @@ const Cartitem = ({post, loading}) => {
               </ProductDetail>
               <PriceDetail>
                 <ProductAmountContainer>
-                  
-                  {/* <ProductAmount><b>수량:</b>{post.quantity}</ProductAmount> */}
-                 
                 </ProductAmountContainer>
-                {/* <ProductPrice>{post.total.toLocaleString()}원</ProductPrice> */}
               </PriceDetail>
               <Button onClick={onRemove}><ClearIcon/></Button>
               </Product>

@@ -4,11 +4,7 @@ import { useLocation } from "react-router";
 
 function HistoryPage() {
   const {state} = useLocation();
-  // const [price, setPrice] = useState('')
   const [total, userId, number, now] = state
-    console.log(total)
-  //  console.log(user)
-   console.log(number)
 
    useEffect(() => {
     if (total) {
@@ -64,19 +60,6 @@ function HistoryPage() {
                 </thead>
 
                 <tbody>
-                {/* {!loading && state &&(
-                     <div>
-                      {state.map(item => (
-                                <td key={item.id}>
-                                <td>{JSON.parse(localStorage.getItem('item.user'))}</td>
-                                <td>{JSON.parse(localStorage.getItem('item.total'))}</td>
-                                <td>{item.quantity}</td>
-                                <td>{item.dateOfPurchase}</td>
-                               </td>
-        
-                        ))}
-                      </div>
-                )} */}
                             <tr style={{ textAlign: 'center', backgroundColor: 'aqua' }} >
                                 <td >{JSON.parse(localStorage.getItem('userId'))}</td>
                                 <td>{JSON.parse(localStorage.getItem('total'))}원</td>

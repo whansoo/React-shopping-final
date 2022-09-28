@@ -20,7 +20,6 @@ const Container = styled.div`
     top: 0;
     z-index: 9;
     background-color: #f5fafd;
-    /* background-color: #fff; */
     border-bottom: 1px solid #c8c8c8;
 `
 
@@ -98,7 +97,6 @@ const Navbar = ({countCartItems, onChange}) => {
 
     const dispatch = useDispatch();
    
-    //   console.log(user.username)
       const onLogout = () => {
           dispatch(logout());
       }

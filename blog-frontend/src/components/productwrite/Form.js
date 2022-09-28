@@ -1,8 +1,7 @@
 
 import { TextField, Paper  } from '@mui/material';
 import FileBase64 from 'react-file-base64';
-// import styled from "styled-components";
-// import { TextField, Button, Typography, Paper  } from '@mui/material';
+
 
 
 
@@ -30,11 +29,7 @@ const Form = ({ onChangeField, title, body, price, selectedFile, size, color }) 
       onChangeField({ key: 'color', value: e.target.value });
       
     };
-    // const onChangeImage = e => {
-    //   const result = onChangeField({ key: 'selectedFile', value: e.target.value });
-    //   setItems([...items, result]);
-      
-    // };
+    
  
   
   return (
@@ -71,11 +66,6 @@ const Form = ({ onChangeField, title, body, price, selectedFile, size, color }) 
           onDone={({ base64 }) => onChangeField({ key: 'selectedFile', value: base64 })}
         />
       
-        {/* <TextField
-        placeholder="사진 기입"
-        onChange={onChangeImage}
-        value={selectedFile}
-      /> */}
     <img className="activator" style={{ width: 200, height: 200, display: 'block' }} src={selectedFile} alt='사진'/>
     </Paper>
     

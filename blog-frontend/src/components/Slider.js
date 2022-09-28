@@ -88,14 +88,6 @@ const Button = styled.button`
       background-color: #c8c8c8;
       transform: scale(1.1);
     }
-  /* padding: 10px;
-  font-size: 20px;
-  background-color: transparent;
-  cursor: pointer;
-  border-radius: 30px;
-  &:hover {
-      background-color: #c8c8c8;
-    } */
 `;
 
 const Slider = () => {

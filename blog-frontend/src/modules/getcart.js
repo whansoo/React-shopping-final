@@ -17,20 +17,6 @@ import createRequestSaga, {
     LIST_CART,
     ({ user,selectedFile,price,productId, products, size, title, color, quantity, total }) => ({ user,selectedFile,price,productId, products, size, title, color,quantity, total }) );
   
-//   export const cartlist = createAction(
-//     LIST_CART,
-//     ({ user, products }) => ({  
-//         userId: user._id,
-//         products: [
-//           {
-//             productId: products._id,
-//             selectedFile: products.selectedFile,
-//             quantity: products.quantity,
-//           },
-//         ],
-//     }),
-//   );
-  
   
   
   const cartListSaga = createRequestSaga(LIST_CART, postsAPI.cartlist);

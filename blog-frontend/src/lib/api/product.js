@@ -10,7 +10,7 @@ export const fetchProductlist = ({ title, body, tags, price, selectedFile}) => {
     });
    
   };
-// export const fetchProductlist = () => client.get(`/api/product` );
+
 
 export const updatePost = (id, updatedPost) => client.patch(`/api/product/${id}`, updatedPost);
 

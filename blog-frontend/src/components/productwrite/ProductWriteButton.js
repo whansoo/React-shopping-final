@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-// import Button from "../common/Button";
-// import {useState} from 'react';
-// import FileBase from 'react-file-base64';
+
 
 const WriteActionButtonBlock = styled.div`
   margin-top: 1rem;

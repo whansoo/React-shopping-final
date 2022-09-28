@@ -1,8 +1,6 @@
-// import React, { useEffect } from 'react';
 import WriteActionButtons from '../../components/productwrite/ProductWriteButton';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-// import { createPost, updatePost } from '../../modules/productwrite';
 import { createPost, updatePost } from '../../modules/product';
 
 
@@ -18,7 +16,6 @@ const WriteActionButtonsContainer = () => {
     price: product.price,
     size: product.size,
     color: product.color,
-    // post: product.post,
     selectedFile: product.selectedFile,
     originalPostId: product.originalPostId,
   }));
@@ -53,17 +50,6 @@ console.log(selectedFile)
   };
 
 
-
-// 성공 혹은 실패 시 할 작업
-  // useEffect(() => {
-  //   if (post) {
-  //     const { _id, user } = post;
-  //    navigate(`/@${user.username}/${_id}`);
-  //   }
-  //   // if (postError) {
-  //   //   console.log(postError);
-  //   // }
-  // }, [navigate, post]);
     return (
         <WriteActionButtons  onPublish={onPublish} onCancel={onCancel} isEit={!!originalPostId}/>
       

@@ -10,7 +10,6 @@ import product, { ProductSaga } from './product';
 import productlist, { ProductListSaga } from './productlist';
 import readproduct, {readproductSaga} from "./productview";
 import addcart, {addcartSaga} from "./cart";
-// import writeproduct, {writeproductSaga} from "./productwrite";
 import getcartlist, { CartListSaga} from "./getcart";
  
 const rootReducer = combineReducers({
@@ -23,7 +22,6 @@ const rootReducer = combineReducers({
     product,
     productlist,
     readproduct,
-    // writeproduct,
     addcart,
     getcartlist,
 });
