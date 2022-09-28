@@ -87,8 +87,22 @@ http://whanshop.herokuapp.com/
 
 #### ![게시판](https://user-images.githubusercontent.com/98297436/192680926-22a2bddd-d3b5-4b0b-a63a-6f7b77d4724c.gif)
 
-#### **4. 검색기능**   
+#### **4. 상품업로드**   
 
 
+#### ![상품업로드](https://user-images.githubusercontent.com/98297436/192681828-c80ff7c9-1601-4a97-8815-2de8febc9dd3.gif)
+
+#### **5. 검색기능**  
 
 
+#### ![검색기능](https://user-images.githubusercontent.com/98297436/192681747-6be87183-681b-42f0-b385-f3f869932bd0.gif)
+
+#### **6. 상세페이지 장바구나 추가/삭제**  
+
+
+#### ![상세카트](https://user-images.githubusercontent.com/98297436/192681894-1cbed180-e381-4d53-9afc-d10f3c3f897a.gif)
+
+#### **7. 결제 및 결제내역**  
+
+
+#### ![결제](https://user-images.githubusercontent.com/98297436/192681937-87ab351b-8cf8-421b-a39a-90a0db7976e3.gif)
