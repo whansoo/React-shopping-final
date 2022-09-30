@@ -35,9 +35,7 @@ export const getPost = async (ctx) => {
 
 export const createPost = async (ctx) => {
    
-    // const { title, body, selectedFile, price, tags, size, color } = ctx.request.body;
-
-    // const newPostMessage = new Product({ title, body, selectedFile, price, tags, size, color })
+    
     const newPostMessage = new Product(ctx.request.body);
 
     try {

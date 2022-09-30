@@ -66,20 +66,6 @@ export const updateCart = async (ctx) => {
    
 }
 
-// export const deleteCart = async (ctx) => {
-//     const { id } = ctx.params;
-
-    
-//     if (!mongoose.Types.ObjectId.isValid(id)) 
-//     return (
-        
-//         ctx.status = 404
-//         )
-        
-//         await Cart.findByIdAndRemove(id);
-     
-       
-// }
 
 
 export const deleteCart = async ctx => {
@@ -88,7 +74,6 @@ export const deleteCart = async ctx => {
     try {
      const CartBody = await Cart.findByIdAndRemove(id).exec();
       ctx.body = CartBody;
-    //   ctx.status = 204; //No Content (성공하기는 했지만 응답할 데이터는 없음)
     } catch (e) {
       ctx.throw(500, e);
     }

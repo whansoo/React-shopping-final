@@ -1,5 +1,4 @@
 import Router from 'koa-router';
-// import koaBody from '../../../node_modules/koa-body/index';
 import { getPosts, getPost, createPost, updatePost, likePost, deletePost } from './product.ctrl';
 
 
