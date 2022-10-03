@@ -29,7 +29,7 @@ http://whanshop.herokuapp.com/
 ## 🗃️Project Folder
 
 ```
-📁blog-backend
+📁shop-backend
 📁node_modules
 📁src
 ├── 📁api
@@ -39,7 +39,7 @@ http://whanshop.herokuapp.com/
 ├── .env
 ├── .gitignore
 └── .eslintrc.json
-📁blog-frontend
+📁shop-frontend
 📁node_modules
 📁public
 📁src
